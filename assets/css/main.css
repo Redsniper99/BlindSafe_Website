@@ -2147,10 +2147,12 @@ section,
 }
 
 .member-img {
-  position: relative;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-bottom: 20px;
+  width: 150px;           /* Set a fixed width for the image */
+  height: 150px;          /* Set a fixed height for the image */
+  object-fit: cover;      /* Ensures the image scales without distorting */
+  border-radius: 50%;     /* Makes the image circular */
+  margin: 0 auto;         /* Centers the image within the container */
+  display: block;   
 }
 
 .member-img img {
